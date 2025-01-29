@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+</head>
+<body>
+   <center>
+    <button class="button is-info is-inverted">blå</button>
+<button class="button is-primary is-inverted" onclick="toggle()">tryck mig</button>
+<button class="button is-danger is-inverted" onclick="toggleAlvin()">röd</button>
+<img id="bild">
+   </center>
+
+
+<script>
+let monke = false;
+function toggle(){
+let html = document.getElementsByTagName("html")
+html[0].classList.toggle("theme-dark")
+html[0].classList.toggle("theme-light")
+}
+function toggleAlvin() {
+    monke = !monke;
+    bild.src = monke ? "Monkey-Selfie-DailyShouts.webp" : "alvin.jpg"
+}
+</script>
+    
+
+
+</body>
+</html>
